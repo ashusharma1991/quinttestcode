@@ -1,0 +1,16 @@
+body {
+    overflow-x: hidden;
+}
+.logoclass
+{
+        width: 60%;
+    padding: 32px;
+}
+
+ul.cardul {
+    display: inline-block;
+}
+
+li.cardli {
+    display: inline;
+}

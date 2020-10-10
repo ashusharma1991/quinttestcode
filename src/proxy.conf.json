@@ -1,0 +1,7 @@
+{
+    "/api/*": {
+        "target": "https://www.thequint.com/api/v1",
+        "secure": false,
+        "logLevel": "debug"
+    }
+}

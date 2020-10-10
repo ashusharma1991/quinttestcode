@@ -1,0 +1,36 @@
+<div class="fluid-container"  style="background: #36154f;     overflow-x: hidden;">
+  <div class="row">
+    <div class="col-sm-3 col-xs-3">
+      <a href=""><img src="../assets/logo.png" class="logoclass"></a>
+    </div>
+  </div>
+</div>
+<div class="container">
+
+  
+  <div class="row">
+    <div class="col-md-8 col-xs-12 mx-auto mt-5">
+
+      <div class="card mb-3" *ngFor="let mem of storiesval.stories">
+        <img class="card-img-top" src="../assets/news.jpg" alt="quint news">
+        <div class="card-body">
+          <h5 class="card-title">{{mem.headline}}</h5>
+          <p class="card-text">{{mem.subheadline}}</p>
+          
+          <ul *ngFor="let sec of mem.sections" class="cardul">
+            <li class="cardli">
+              <a href="{{mem.slug}}" class="btn-sm btn-primary">Section Url Link</a>
+              <p class="card-text"><small class="text-muted">{{mem.name}}</small></p>
+              <p class="card-text"><small class="text-muted">{{mem.sulg}}</small></p>
+            </li>
+          </ul>
+         </div>
+      </div>
+
+
+    </div>
+  </div>
+</div>
+
+
+
